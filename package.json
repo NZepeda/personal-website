@@ -1,0 +1,16 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nestor Zepeda",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
