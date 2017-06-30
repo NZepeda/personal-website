@@ -4,6 +4,11 @@ var bodyParser = require('body-parser');
 
 module.exports = function(app){
 
+    app.all('*', function(req, res, next){
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'PUT, GET, POST');
+        res.header('Access-Control-Allow-Headers', 'accept, content-type');
+    })
     // API Endpoint
     var systemController = require('./controllers/systemController');
     app.get('/addPageData', systemController.postUrlToDb);
