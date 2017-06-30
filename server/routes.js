@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 module.exports = function(app){
 
     // API Endpoint
+    var systemController = require('./controllers/systemController');
+    app.get('/addPageData', systemController.postUrlToDb);
     //
 
     app.get('/', function(req, res){
